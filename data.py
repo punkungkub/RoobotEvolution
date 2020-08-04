@@ -23,6 +23,8 @@ class data:
         for x in self.fitness:
             for y in self.fitness[x]:
                 plt.scatter(x, y,c='k')
+        plt.xlabel('Generation')
+        plt.ylabel('Fitness')
         plt.savefig('dot_plot.jpeg')
         
     def saveData(self):
